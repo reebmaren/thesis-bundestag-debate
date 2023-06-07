@@ -1,0 +1,517 @@
+
+
+/* = = = = = = = = = = = = = = = = = datei format.css = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+
+/* ############################################################ */
+/* allgemein */
+/* ############################################################ */
+
+*, *:before, *:after {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+html, body {
+font-family:'open_sanscondensed_light', arial,helvetica, roboto ,sans-serif;
+font-size:62.5%;
+line-height:1.5;
+}
+
+body {height:100%;
+font-size:1.8rem;
+margin: 0 auto;
+overflow-x:hidden;
+color:#26374A;
+background:#f8f8f8;
+background: radial-gradient(circle,#FCFCFC 10%, #F3F5F3 84%);
+color:#26374A;
+}
+
+
+/* ---- überschriften ----- */
+
+h1, h2, h3, h4, h5 {text-align:left;
+font-weight:bold;text-transform:none;
+color:#26374A;
+}
+
+h2 {font-family: sserif;
+font-size:2.6rem;
+line-height: 3.3rem;
+margin-top: 2rem;
+margin-bottom: 3.5rem;
+letter-spacing: 0rem;
+}
+
+
+h3 {color:#334B64;
+font-size:2.1rem;
+line-height: 3rem;
+margin-top: .5rem;
+margin-bottom:2.5rem;
+letter-spacing: 0rem;
+}
+
+
+/* ----- quelltext-erklärungen - wenn vorhanden ----- */
+
+pre {white-space:pre-wrap;position:relative;
+font-size:1.5rem;
+font-family:'open_sanscondensed_light', tahoma,georgia,  arial, Verdana, Segoe, 'Open Sans',helvetica,roboto ,sans-serif;
+padding:0rem 1rem 2rem 1rem;
+margin:4rem auto;
+text-align:center;
+border:dotted 0.1rem #686868;
+background:transparent;
+}
+
+pre .extra {display:inline-block;
+position:absolute;
+left:-1.5rem;top:1.5rem;font-size:1.8rem;
+color:#fff;font-weight:normal;
+background:#667886;padding:0 .5rem;
+transform:rotate(-45deg);
+}
+
+
+/*  ----------------------------------------  */
+/* allgemeine links */
+/*  ----------------------------------------  */
+
+a  {color:#26374A;
+text-decoration: underline; }
+
+label a {cursor:pointer; }
+
+a:hover {color:#26374A;
+text-decoration: none;
+}
+
+
+/* ############################################################ */
+/*  speziell*/
+/* ############################################################ */
+
+/* bilder -anpassen der grösse */
+img {max-width: 100%;display:block;
+margin:0 auto;
+height: auto;
+border-radius:2rem;box-shadow:0px 1px 3px rgba(0,0,0,.2);
+}
+
+
+/*  ----------------------------------------  */
+/*   MEHR LESEN-BUTTON  */
+/*  ----------------------------------------  */
+
+/* ----- style ----- */
+
+.button  {display:block;
+margin:3rem 0 1rem 0;
+text-align:left;
+}
+
+.button .mehr_lesen a {display:inline-block;
+color:#fff;
+background:#a5aeb8;
+text-transform:uppercase;
+font-size:1.5rem;
+letter-spacing:2px;
+border-radius:.5rem;
+text-decoration:none;
+padding:.4rem 1.5rem ;
+cursor:pointer;
+}
+
+.button .mehr_lesen a:hover {color:#fff;
+background:#c0a780;
+}
+
+
+/*  ----------------------------------------  */
+/* LISTE-SPEZIAL  */
+/*  ----------------------------------------  */
+
+/* ----- style 1 - mit aufzählungszeichen ----- */
+
+.liste-spez   {display:block;padding:0;}
+
+.liste-spez ul  {text-align:left;
+margin:0rem 0 0 0;
+padding:0rem 0 0 2rem;
+}
+
+/* aufzaehlungszeichen typ und farbe */
+.liste-spez li {list-style:square; }
+.liste-spez li::marker { color: #788596; }
+
+
+/* ----- style 2 -  bei vorangestelltem icon (fontawesome) ----- */
+
+.liste-spez-2 ul  {text-align:left;
+margin:0rem 0 0 -1rem;
+padding:0rem 0 0 2rem;
+}
+
+.liste-spez-2 li {list-style:none;
+list-style-position: inside; /* rückt gfls zweite zeile ein*/
+text-indent:-1.4rem; /* rückt gfls zweite zeile ein */
+padding-left:1.5rem; /* rückt gfls zweite zeile ein */
+}
+
+.liste-spez-2  i {transform:scale(.9);padding-right:.8rem;color:#788596; }
+.liste-spez-2 li a:hover i {color:#c0a780; }
+
+
+/* = = = = = = = = = =  = = = = = = = = = =  = = = = = = = = = = = = = = = = = = = = */
+/*  GRID-SYSTEM  - für Bilder / Spalten */
+/* = = = = = = = = = =  = = = = = = = = = =  = = = = = = = = = = = = = = = = = = = = */
+
+/* ---------- boxen - grundsystem ---------- */
+
+.box {display:inline-block;
+text-align:left;
+vertical-align:top;
+width:100%;
+padding: 2rem;
+margin:0  -.25rem -.25rem -.25rem; /* ausgleich ( minus-margin) für INLINE-BLOCK-WHITESPACE-BUG*/
+}
+
+.box-1_of_1 ,
+.box-1_of_2 ,
+.box-1_of_3,
+.box-1_of_4,
+.box-1_of_5 {width:100%; }
+
+
+/* ---------- boxen - bilder ---------- */
+
+.bilder  {margin:-.2rem -1rem; text-align:center; }
+.bilder .box  {padding:1rem; }
+
+.bilder .box-1_of_1 ,
+.bilder .box-1_of_2 ,
+.bilder .box-1_of_3,
+.bilder .box-1_of_4 {width:100%; }
+.bilder .box-1_of_4b  {width: 50%; }
+
+.bilder.gallery .box-1_of_2 {width:50%; }
+.bilder.gallery .box-1_of_3 {width:33.33%; }
+.bilder.gallery .box-1_of_4 {width:50%; }
+
+.bilder.gallery img  {border-radius:.5rem; }
+
+/*  bei Mausberührung der Bilder, wenn diese verlinkt sind (z.B Lightbox) */
+a:hover img {opacity:.8;  filter: blur(2px)  }
+
+
+/*  ---------- boxen - andere ---------- */
+
+.wrapper {display:inline-block;width:100%;
+background:#FEFDFE;
+box-shadow:0px 1px 3px rgba(0,0,0,.2);
+border-radius:2rem;
+padding:0rem;
+}
+
+/* spricht nur die verschachtelten 2er-boxen bei .special an */
+.special.box.box-1_of_2 {width:100%; }
+
+#fuss .box-1_of_3 {width: 100%; }
+
+
+/* ############################################################ */
+/* bereich header */
+/* ############################################################ */
+
+header {display:block;height:100%; padding:1.5rem 0 0 0; }
+
+#logo {display:block;
+text-align:center;
+padding:0 1.5rem ;
+}
+
+.logo-a, .logo-b  {display:inline-block;
+width:100%;
+margin:1.5rem 0;
+padding:0rem;
+}
+
+.logo-a.wrapper {
+background:gainsboro;
+background: radial-gradient(circle,#fff 10%, #f7f7f7 84%);
+}
+
+.logo-a .box {padding:0rem; }
+
+.logo-b.wrapper {min-height:30rem;
+background:gainsboro;
+background-image:url(../images/frankfurt_1.jpg);
+background-repeat:no-repeat;
+background-position:20% 40%;
+background-size:cover;
+}
+
+/* fotos auf den unterseiten */
+.logo-b.wrapper.primus-pic   {background-image:url(../images/medium_picture204.jpg); }
+.logo-b.wrapper.secundus-pic {background-image:url(../images/medium_picture06.jpg); }
+.logo-b.wrapper.tertius-pic  {background-image:url(../images/medium_picture163.jpg); }
+.logo-b.wrapper.quartus-pic  {background-image:url(../images/medium_picture54.jpg); }
+.logo-b.wrapper.quintus-pic  {background-image:url(../images/medium_picture603.jpg); }
+.logo-b.wrapper.sextus-pic   {background-image:url(../images/medium_picture183.jpg); }
+
+
+/* logo-object  */
+
+#logo .name {display:block;font-family: serif;
+text-align:center;
+color:#26374A;
+font-weight:normal;
+text-transform:uppercase;
+font-size:2.1rem;
+line-height: 2.4rem;
+letter-spacing:1px;
+margin: 0 ;
+padding:1rem;
+}
+
+#logo .name .slogan {display:block;text-shadow:0px 0px 1px #fff;
+font-size:1.7rem;
+line-height:2rem;
+padding:.5rem .5rem;
+}
+
+#logo .seitentitel {display:block;
+background:#26374A;
+color:white;
+font-size:1.7rem;
+line-height:2rem;
+padding:0rem .5rem;
+text-transform:none;
+}
+
+
+/* ############################################################ */
+/* bereich inhalt */
+/* ############################################################ */
+
+main#inhalt {display:block;
+text-align:center;
+padding:0 1.5rem;
+}
+
+.inhalt-a {display:inline-block;
+width:100%;
+margin:1.5rem 0;
+padding:0rem;
+}
+
+
+/* ############################################################ */
+/* bereich fuss */
+/* ############################################################ */
+
+footer#fuss {
+display:block;
+text-align:center;
+padding:0 1.5rem 1.5rem 1.5rem ;
+}
+
+.fuss-a {display:inline-block;
+width:100%;
+text-align:left;
+margin:1.5rem 0;
+padding:0rem;
+}
+
+#fuss .box  {margin-bottom:-2rem; }
+
+
+#fuss .box h3 {
+text-align:left;
+font-size:1.7rem;
+color:#26374A;
+letter-spacing:2px;
+font-weight:bold;
+text-transform:uppercase;
+margin-top:1rem;
+margin-bottom:1rem;
+}
+
+#fuss .box h3:after {display:block;
+border-top: 1px solid #6F6F6F;
+width: 30px;
+content: "";
+margin-top: 1rem;margin-bottom:0rem;
+}
+
+/* gilt nur für jeden zweiten article in der jeweiligen fuss box, also hier für SOCIAL MEDIA ICONS   */
+#fuss .box article:nth-child(2) {margin-top:3rem; }
+
+
+/*  ----------------------------------------  */
+/*  die wesentlichen schriftformate für den gesamten footer plus fussmenu */
+/*  ----------------------------------------  */
+
+.fuss-a,
+.fuss-a a {
+color:#26374A;
+text-shadow:none;
+font-weight:normal;
+font-size:1.6rem;
+line-height:2.8rem;
+text-decoration:none;
+}
+
+.fussmenu  ul {text-align:left;padding: 0;margin: 0; }
+.fussmenu li { list-style:none; }
+#fuss li a:hover {color:#715a35;text-decoration:none; }
+
+
+/* icons social media */
+
+.fussmenu ul.social li  {display:inline-block; margin-right:1rem;margin-bottom:1rem; }
+.fussmenu ul.social li i {display:block;color:#667886;transition:all .6s ease-out; }
+.fussmenu ul.social li a:hover i {color:#c0a780;transform:rotate(720deg) }
+
+
+
+/* ############################################################ */
+/* M E D I A   Q U E R I E S */
+/* CSS Bildschirmabfragen */
+/* ############################################################ */
+
+/* ==================================== ab 320 pixel ================================== */
+@media (min-width: 320px) {
+
+/* - hinweis -
+für die kleinste smartphone-auflösung von 320 pixel benötigen wir KEINE bildschirmabragen (css-media queries),
+denn hierfür gilt ja automtisch der gesamte vorstehende quelltext-code  -
+weil wir das template ja 'MOBILE-FIRST' angelegt haben.
+*/
+
+}
+
+
+/* ==================================== ab 360 pixel ================================== */
+@media (min-width: 360px) {
+
+/* keine angabe */
+
+}
+
+
+/* ==================================== ab 480 pixel ================================== */
+@media (min-width: 480px) {
+
+html {font-size:70%; }
+
+.wrapper {padding:.7rem 1rem 1rem 1rem  }
+
+.bilder .box-1_of_4  {width: 50%; }
+
+}
+
+
+/* ==================================== ab 580 pixel ================================== */
+@media (min-width: 580px) {
+
+.wrapper {width: 90%; }
+
+.bilder .box-1_of_2  {width: 50%; }
+.bilder.gallery  .box-1_of_4 {width:25%; }
+
+}
+
+
+/* ==================================== ab 640 pixel ================================== */
+@media (min-width: 640px) {
+
+#fuss .box-1_of_3  {width: 50%; }
+
+}
+
+
+/* ==================================== ab 760 pixel ================================== */
+@media (min-width: 760px) {
+
+html {font-size:80%; }
+
+.wrapper  {width: 700px; }
+
+/* ausblendung seitentitel */
+#logo .seitentitel {display:none; }
+
+#logo .name {font-size:2.8rem;line-height: 3.2rem; }
+#logo .name .slogan {font-size:1.9rem;line-height:2.2rem;padding:0rem 0rem; }
+
+.logo-a .box {padding:1rem; }
+
+
+
+}
+
+
+/* ==================================== ab 800 pixel ================================== */
+@media (min-width: 800px) {
+
+/* keine angabe */
+
+}
+
+
+/* ===================================== ab 960 pixel ================================= */
+@media (min-width: 960px) {
+
+html {font-size:70%; }
+
+.wrapper {width: 95%; }
+
+.bilder.gallery  img  {border-radius:2rem; }
+.bilder .box-1_of_3  {width: 33.33%;  }
+.bilder .box-1_of_4  {width: 25%; }
+
+/* inhalt der special-boxen auf vertikale ausrichtung gesetzt */
+.special.box  {vertical-align:middle;}
+
+/*  spricht nur die 2er-boxen bei .special an */
+.special.box.box-1_of_2 {width:50%; }
+
+.fuss-a, .fuss-a a {font-size:1.3rem; }
+#fuss .box h3 {font-size:1.3rem; }
+#fuss .box-1_of_3  {width: 33.33%; }
+
+/* gilt nur für jeden zweiten article in der fuss box, also hier für SOCIAL MEDIA ICONS  */
+#fuss .box article:nth-child(2) {margin-top:.5rem; }
+
+}
+
+
+/* ===================================== ab 1024 pixel ================================= */
+@media (min-width: 1024px) {
+
+/* quelltext-erklärungen */
+pre {width:70%; }
+
+}
+
+
+
+/* ===================================== ab 1200 pixel ================================= */
+@media (min-width: 1200px) {
+
+html {font-size:80%; }
+
+}
+
+
+/* ===================================== ab 1300 pixel ================================= */
+@media (min-width: 1300px) {
+
+html {font-size:85%; }
+
+.wrapper  {width: 1250px;  }
+
+}

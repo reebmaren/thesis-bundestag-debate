@@ -1,0 +1,15 @@
+
+
+
+
+@font-face {
+    font-family: 'open_sanscondensed_light';
+    src: url('../fonts/open-sans-condensed/opensans-condlight.eot');
+    src: url('../fonts/open-sans-condensed/opensans-condlight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans-condensed/opensans-condlight.woff2') format('woff2'),
+         url('../fonts/open-sans-condensed/opensans-condlight.woff') format('woff'),
+         url('../fonts/open-sans-condensed/opensans-condlight.ttf') format('truetype'),
+         url('../fonts/open-sans-condensed/opensans-condlight.svg#open_sanscondensed_light') format('svg');
+
+
+}
