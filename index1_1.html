@@ -15,6 +15,10 @@ content="Thesis Bundestagdebatte" >
 	
 <link rel="icon" type="image/x-icon" href="/images/favicon-16x16.ico">
 
+
+<!-- /////////////////// Ende /////////////////// -->
+
+
 <link rel="stylesheet" href="css/format.css" type="text/css">
 <link rel="stylesheet" href="css/menue.css" type="text/css">
 <link rel="stylesheet" href="css/animation.css" type="text/css">
@@ -25,19 +29,10 @@ content="Thesis Bundestagdebatte" >
 <script src="https://kit.fontawesome.com/9c26582cdc.js" crossorigin="anonymous"></script>
 
 
-<script  src="js/jquery-3.2.1.min.js"></script>	
-
-  <link rel="stylesheet" href="css/format.css">
-  <script src="js/pygments.js"></script>
-
-	
-</head>
+<script  src="js/jquery-3.2.1.min.js"></script>
 
 
-<body id="page-top">
 
-<header>
-	
 <!-- ///////////////////  JQUERY smooth-scroll-to-top /////////////////// -->
 <!-- https://github.com/dnlnrs/jquery-goup -->
 <script  src="js/plug-ins/highly-customizable-smooth-scroll/src/jquery.goup.js"></script>
@@ -49,20 +44,27 @@ $(document).ready(function(){
 //-->
 </script>
 <!-- /////////////////// Ende /////////////////// -->
-	
-	
-	
+
+
 <!-- ///////////////////  JQUERY lightbox fotogallery/////////////////// -->
 <!-- http://lokeshdhakar.com/projects/lightbox2/ -->
-<link rel="stylesheet" href="js/plug-ins/lightbox2/src/css/lightbox.css">
+<link rel="stylesheet" href="js/plug-ins/lightbox2/src/css/lightbox.css" >
 <script  src="js/plug-ins/lightbox2/src/js/lightbox.js"></script>
 <!-- /////////////////// Ende /////////////////// -->
-	
+
+
 <!-- ///////////////////  JQUERY one page scroll /////////////////// -->
 <script src="js/plug-ins/one-page-scroll-web-template-smooth-scroll/smooth-scroll.js"></script>
 <!-- /////////////////// Ende /////////////////// -->
-	
-	
+
+
+
+</head>
+
+
+<body id="page-top">
+
+<header>
 
 <!-- ############################################################ -->
 <!-- header  bereich -->
@@ -75,8 +77,8 @@ $(document).ready(function(){
 <div class="box box-1_of_1">
 
 <div class="name">Accompanying materials for the thesis
-<span class="slogan">by Maren Reeb</span>
-<b class="seitentitel">| Home |</b>
+<span class="slogan">By Maren Reeb</span>
+<b class="seitentitel">| More |</b>
 </div>
 
 <nav>
@@ -87,12 +89,13 @@ $(document).ready(function(){
 <label class="button-close" for="open-menue"><i class="fas fa-times"></i></label>
 <!--  menu-oeffnen-button -->
 <label class="button-open" for="open-menue"><i class="fas fa-bars"></i></label>
+
 <!-- Menue -->
 <div id="menu1">
 <ul>
-<li id="aktuell"><a href="index.html">Home</a></li>
-<li> <a href="index1.html">term frequencies</a></li>
-<li> <a href="index1_1.html">More</a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="index1.html">term frequencies</a></li>
+<li id="aktuell"><a href="index1_1.html">More</a></li>
 <li> <a href="index1_2.html">Topic Model</a></li>
 <li><a href="index2.html">Results</a></li>
 <li><a href="index3_3.html">About</a></li>
@@ -106,6 +109,8 @@ $(document).ready(function(){
 <!-- ende abschnitt -->
 
 
+<!-- ende abschnitt -->
+
 </div>
 </header>
 <!-- ende header  -->
@@ -115,64 +120,59 @@ $(document).ready(function(){
 <!-- inhalt bereich -->
 <!-- ############################################################ -->
 
+	
+
+	
+	
+	
 <main id="inhalt">
 
-<!-- abschnitt -->
 <section class="wrapper inhalt-a">
-
 <div class="box box-1_of_1">
-<h3>Overview</h3>
-
-Digital humanities researchers can effectively navigate and analyze large data sets, uncover patterns, and reveal hidden relationships using visualization techniques such as network diagrams, timelines, and data-driven visualizations. These visual representations serve as powerful tools for hypothesis generation, exploration, and communication of research results.<br><br> Visual heuristics in the digital humanities not only help explore data, but also enable researchers to communicate their findings to a broader audience in a more engaging and accessible way. The creation of the visualization based on the project data is explained on the following pages.
-
-</div>
-</section>
-<!-- ende abschnitt -->
-
-
-<!-- abschnitt -->
-<section class="wrapper inhalt-a">
-
-<div class="box special box-1_of_2">
-
-<div class="bilder">
 	
-<div class="box box-1_of_2">
-<img src="images/ALL_period.png" width="800" height="530"  alt="">
-</div>
+
+
+
+
 	
-<div class="box box-1_of_2">
-<img src="images/wordcnt_example_graph.png" width="800" height="530"  alt="">
+<h3>More contrasting display of term frequencies</h3>
+
+
+In a further step, the data were filtered according to faction and were also fed into a dictionary that contained the number of counts per year. To establish a content-related relationship between the mentions of all factions and those of SPD and CDU/CSU, the results were converted into a stacked bar plot. In this way it is possible to interpret the ratio of mentions of these groups compared to all groups. It is also possible to compare patterns more easily. Based on the same data results, this presentation is an improvement over the previous one. 
+
+
+<br>
+<br>
+
+
+<div class="bilder gallery">
+
+<div class="box box-1_of_3">
+<a href="images/code_example_wordcnt1.jpg" data-lightbox="gruppe1" data-title="Code mathplotlib (see code methods_term_frequencies)">
+<img src="images/code_example_wordcnt1.jpg" width="800" height="530"  alt="">
+</a>
 </div>
-	
-<div class="box box-1_of_2">
+
+<div class="box box-1_of_3">
+<a href="images/freq_integration_CDU.png" data-lightbox="gruppe1" data-title="Term frequency keyword by year and faction">
 <img src="images/freq_integration_CDU.png" width="800" height="530"  alt="">
+</a>
 </div>
-	
-<div class="box box-1_of_2">
+
+<div class="box box-1_of_3">
+<a href="images/freq_integration_SPD.png" data-lightbox="gruppe1" data-title="Term frequency keyword by year and faction">
 <img src="images/freq_integration_SPD.png" width="800" height="530"  alt="">
-</div>
-</div>
-
-</div>
-
-<div class="box special box-1_of_2">
-<h3>Preview</h3>
-The creation of visualizations in the project and their exploratory potential will be presented. In the present work, the graphical representations were used on the one hand to make the intermediate results easier to present and to make them more understandable. On the other hand, the visualizations themselves were also used as a basis for the evaluation of the results.
-	
-<div class="button"><span class="mehr_lesen"><a href="index1.html">Read More</a></span></div>
-
-	 
+</a>
 </div>
 	
-</section>
-	
+<div class="button"><span class="mehr_lesen"><a href="https://www.google.de" target="_blank">Code</a></span></div>
+
+
 <!-- ende abschnitt -->
 
 
 </main>
-
-
+	
 <!-- ############################################################ -->
 <!-- fuss bereich -->
 <!-- ############################################################ -->
@@ -187,5 +187,5 @@ The creation of visualizations in the project and their exploratory potential wi
 
 <!-- ende abschnitt -->
 
-
-
+</body>
+</html>

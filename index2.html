@@ -7,11 +7,16 @@
 <meta name="page-type" content=" homepage">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords"
-content="responsive,homepage,dokument,webpage,page,web,internet,responsive homepage dokument webpage page web internet">
+content="Thesis Bundestagdebatte">
 <meta name="description"
-content="responsive,homepage,dokument,webpage,page,web,netz" >
+content="Thesis Bundestagdebatte" >
 <meta name="format-detection" content="telephone=no">
-<title>responsive, homepage, dokument, webpage, page, web, internet, responsive homepage dokument webpage page web internet</title>
+<title>Reeb - Thesis Bundestagdebatte</title>
+	
+<link rel="icon" type="image/x-icon" href="/images/favicon-16x16.ico">
+
+
+<!-- /////////////////// Ende /////////////////// -->
 
 
 <link rel="stylesheet" href="css/format.css" type="text/css">
@@ -19,12 +24,47 @@ content="responsive,homepage,dokument,webpage,page,web,netz" >
 <link rel="stylesheet" href="css/animation.css" type="text/css">
 <link rel="stylesheet" href="css/font-open-sans-condensed.css" type="text/css">
 
+
+<!-- fontawesome-icon-font -->
+<script src="https://kit.fontawesome.com/9c26582cdc.js" crossorigin="anonymous"></script>
+
+
+<script  src="js/jquery-3.2.1.min.js"></script>
+
+
+
+<!-- ///////////////////  JQUERY smooth-scroll-to-top /////////////////// -->
+<!-- https://github.com/dnlnrs/jquery-goup -->
+<script  src="js/plug-ins/highly-customizable-smooth-scroll/src/jquery.goup.js"></script>
+<script>
+<!--
+$(document).ready(function(){
+  jQuery.goup();
+});
+//-->
+</script>
+<!-- /////////////////// Ende /////////////////// -->
+
+
+<!-- ///////////////////  JQUERY lightbox fotogallery/////////////////// -->
+<!-- http://lokeshdhakar.com/projects/lightbox2/ -->
+<link rel="stylesheet" href="js/plug-ins/lightbox2/src/css/lightbox.css" >
+<script  src="js/plug-ins/lightbox2/src/js/lightbox.js"></script>
+<!-- /////////////////// Ende /////////////////// -->
+
+
+<!-- ///////////////////  JQUERY one page scroll /////////////////// -->
+<script src="js/plug-ins/one-page-scroll-web-template-smooth-scroll/smooth-scroll.js"></script>
+<!-- /////////////////// Ende /////////////////// -->
+
+
+
 </head>
 
 
 <body id="page-top">
 
-<header >
+<header>
 
 <!-- ############################################################ -->
 <!-- header  bereich -->
@@ -36,20 +76,29 @@ content="responsive,homepage,dokument,webpage,page,web,netz" >
 <section class="wrapper logo-a">
 <div class="box box-1_of_1">
 
-<div class="name">Enjoy Home-Office
-<span class="slogan">Work & Relax</span>
-<b class="seitentitel">| Secundus |</b>
+<div class="name">Accompanying materials for the thesis
+<span class="slogan">By Maren Reeb</span>
+<b class="seitentitel">| Results |</b>
 </div>
 
 <nav>
+	
+<!--  checkbox versteckt -->
+<input type="checkbox" id="open-menue">
+<!--  menue-schliessen-button -->
+<label class="button-close" for="open-menue"><i class="fas fa-times"></i></label>
+<!--  menu-oeffnen-button -->
+<label class="button-open" for="open-menue"><i class="fas fa-bars"></i></label>
 
 <!-- Menue -->
 <div id="menu1">
 <ul>
 <li><a href="index.html">Home</a></li>
-<li><a href="index1.html">Primus</a></li>
-<li id="aktuell"><a href="index2.html">Secundus</a></li>
-<li><a href="index3.html">Tertius</a></li>
+<li><a href="index1.html">term frequencies</a></li>
+<li><a href="index1_1.html">More</a></li>
+<li> <a href="index1_2.html">Topic Model</a></li>
+<li id="aktuell"><a href="index2.html">Results</a></li>
+<li><a href="index3_3.html">About</a></li>
 </ul>
 </div>
 <!-- Menue ende  -->
@@ -60,10 +109,6 @@ content="responsive,homepage,dokument,webpage,page,web,netz" >
 <!-- ende abschnitt -->
 
 
-<!-- abschnitt -->
-<section class="wrapper logo-b secundus-pic">
-&nbsp;
-</section>
 <!-- ende abschnitt -->
 
 </div>
@@ -75,58 +120,83 @@ content="responsive,homepage,dokument,webpage,page,web,netz" >
 <!-- inhalt bereich -->
 <!-- ############################################################ -->
 
+	
+	
 <main id="inhalt">
 
 <section class="wrapper inhalt-a">
 <div class="box box-1_of_1">
+	
 
-<h2>Responsive testen</h2>
+	
+<h3>Evaluation results </h3>
 
-Hier zwei gute M&ouml;glichkeiten ein responsives Layout zu testen. Laden Sie zun&auml;chst wie gewohnt unsere Vorlage ganz normal herunter, entpacken die zip-Datei und rufen dann die Startdatei index.html in ihrem Browser auf.
 
-Bei nachfolgend genannter M&ouml;glichkeit [1] rufen Sie den Browser Firefox auf, bei der zweiten M&ouml;glichkeit [2] ist die Browserwahl egal, es funktioniert in jedem Browser, nehmen Sie Ihren Lieblingsbrowser.
+The data has been filtered by fraction in order to show the change in the expression of the probability values over time. With the help of the visualizations, it is possible to find certain patterns. The topics shown are those that appear most when "Immigration (topic 5)" is the highest proportioned topic. One can see the trend: These topics have lower proportions until the mid-1980s and then increase until the mid-1990s. The graph of the CDU/CSU, for example, shows that the topic "German Unification (topic 21)" has a higher share than that of the SPD prior to 1990. There is also a trend towards higher shares for "Development (topic 3)" at the change of government in 1998 and "European policy (topic 18)" in the early 2000s. These patterns can and should be verified at the source level. The results are always only a first approximation. However, these results are well suited as an exploratory, heuristic means of identifying sources that are potentially relevant to a question in the large number of documents.
 
-<br>
-<br>
-
-<h3>[1] Testen mit Firefox-Tools</h3>
-Und zwar soll mit sogenannten Entwicklertools gearbeitet werden. Das Gute ist, der Browser hat diese gleich mit an Bord, man braucht also nicht auf externe Tools zur&uuml;ckgreifen. Richtig gut gemacht, das Tool.
-
-<br>
-<br>
-
-<div class="bilder">
+<br><br>
+	
+	
+<div class="bilder gallery">
+	
+<div class="box box-1_of_2">
+<a href="images/CDU_all_new.png" data-lightbox="gruppe1" >
+<img src="images/CDU_all_new.png" width="800" height="530"  alt="">
+</a>
+</div>
 
 <div class="box box-1_of_2">
-<img src="images/picture743.jpg" width="800" height="530"  alt="">
+<a href="images/SPD_all_new.png" data-lightbox="gruppe1" >
+<img src="images/SPD_all_new.png" width="800" height="530"  alt="">
+</a>
 </div>
-<div class="box box-1_of_2">
-<img src="images/picture390.jpg" width="800" height="530"  alt="">
-</div>
-<div class="box box-1_of_2">
-<img src="images/picture388.jpg" width="800" height="530"  alt="">
-</div>
-<div class="box box-1_of_2">
-<img src="images/picture748.jpg" width="800" height="530"  alt="">
-</div>
-
-</div>
-
-<br>
-
-<h3>[2] Der schnelle Weg</h3>
-Noch schneller und einfacher, aber eher f&uuml;r einen ersten allgemeinen &Uuml;berblick gedacht, testen Sie wie folgt: Wir gehen davon aus, da&szlig; Sie Ihre gr&ouml;&szlig;te Bildschirmaufl&ouml;sung auf dem Desktop-PC eingestellt haben.
 
 <br>
 <br>
 
-Minimieren Sie nun das Browser-Fenster in Ihrem Lieblingsbrowser und ziehen Sie dann das Browser-Fenster mit gedr&uuml;ckt gehaltener Maustaste ganz langsam von rechts nach links in der Breite immer schmaler zusammen und dann wieder umgekehrt von links nach rechts wieder ganz auf.
-Achten Sie darauf, wann das Layout umbricht, zum Beispiel von zwei-spaltig auf ein-spaltig oder Objekte sich in der Gr&ouml;&szlig;e ver&auml;ndern.
+<div class="box box-1_of_1">
+	
 
+	
+<h3>Examples of exploratory evaluation of further results </h3>
+
+
+In this project, the entire corpus of Bundestag speeches was given to the model. Therefore, the topics represent a wide range of different political topics. Here are two more topic visualizations. Both of them contain the topic "German Unification (21)". The graph is only slightly distorted in relation to the other lines, and you can see that the share of this topic remains roughly the same over time. For example, the graph on the left shows the trend of a sharp increase in the share of the topic "Employment (25)" in the mid-1990s and then a decline again in the early 2000s. In the early 1990s, following the reunification of East and West Germany, the country faced high unemployment. This was due to the economic challenges associated with integrating the two regions. However, Germany implemented several labor market reforms and economic policies aimed at reducing unemployment starting in the mid-1990s. These reforms became known as the "Hartz reforms." They were implemented in the early 2000s. The model shows a trend without saying anything about the content of the speeches. The graph on the left shows the topic "Foreign Policy (8)". It includes keywords like <i>"afghanistan"</i>, <i>"hilfe"</i>, <i>"vereint"</i> (see Appendix Thesis). In the mid-2000s, the graph shows an increase in the proportion. Germany's involvement in Afghanistan was part of the international military coalition in the aftermath of the September 11, 2001 terrorist attacks in the United States. The German government pledged its support to the United States in the fight against terrorism. It joined the NATO-led mission in Afghanistan. In April 2021, the German government announced the withdrawal of its remaining troops from Afghanistan. This marks the end of its military mission in the country. The topic is likely to concentrate debates around this military mission.
+
+<br><br>
+
+<div class="bilder gallery">
+	
+<div class="box box-1_of_4b">
+<a href="images/ALL_example1.png" data-lightbox="gruppe1">
+<img src="images/ALL_example1.png" width="800" height="530"  alt="">
+</a>
 </div>
-</section>
+
+<div class="box box-1_of_4b">
+<a href="images/ALL_example2.png" data-lightbox="gruppe1">
+<img src="images/ALL_example2.png" width="800" height="530"  alt="">
+</a>
+</div>
+
 <!-- ende abschnitt -->
 
+
+</main>
+
+<!-- ############################################################ -->
+<!-- fuss bereich -->
+<!-- ############################################################ -->
+
+<footer id="fuss">
+
+<!-- abschnitt -->
+
+
+<span style="font-size:12pt"> &copy;Maren Reeb</span> 
+
+
+<!-- ende abschnitt -->
 
 </body>
 </html>

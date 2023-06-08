@@ -130,40 +130,6 @@ background:#c0a780;
 }
 
 
-/*  ----------------------------------------  */
-/* LISTE-SPEZIAL  */
-/*  ----------------------------------------  */
-
-/* ----- style 1 - mit aufzählungszeichen ----- */
-
-.liste-spez   {display:block;padding:0;}
-
-.liste-spez ul  {text-align:left;
-margin:0rem 0 0 0;
-padding:0rem 0 0 2rem;
-}
-
-/* aufzaehlungszeichen typ und farbe */
-.liste-spez li {list-style:square; }
-.liste-spez li::marker { color: #788596; }
-
-
-/* ----- style 2 -  bei vorangestelltem icon (fontawesome) ----- */
-
-.liste-spez-2 ul  {text-align:left;
-margin:0rem 0 0 -1rem;
-padding:0rem 0 0 2rem;
-}
-
-.liste-spez-2 li {list-style:none;
-list-style-position: inside; /* rückt gfls zweite zeile ein*/
-text-indent:-1.4rem; /* rückt gfls zweite zeile ein */
-padding-left:1.5rem; /* rückt gfls zweite zeile ein */
-}
-
-.liste-spez-2  i {transform:scale(.9);padding-right:.8rem;color:#788596; }
-.liste-spez-2 li a:hover i {color:#c0a780; }
-
 
 /* = = = = = = = = = =  = = = = = = = = = =  = = = = = = = = = = = = = = = = = = = = */
 /*  GRID-SYSTEM  - für Bilder / Spalten */
@@ -191,13 +157,13 @@ margin:0  -.25rem -.25rem -.25rem; /* ausgleich ( minus-margin) für INLINE-BLOCK
 .bilder  {margin:-.2rem -1rem; text-align:center; }
 .bilder .box  {padding:1rem; }
 
-.bilder .box-1_of_1 ,
-.bilder .box-1_of_2 ,
+.bilder .box-1_of_1 
+.bilder .box-1_of_2 {hover img opacity:.8;  filter: blur(2px)}
 .bilder .box-1_of_3,
 .bilder .box-1_of_4 {width:100%; }
 .bilder .box-1_of_4b  {width: 50%; }
 
-.bilder.gallery .box-1_of_2 {width:50%; }
+.bilder.gallery .box-1_of_2 {width:50%;  }
 .bilder.gallery .box-1_of_3 {width:33.33%; }
 .bilder.gallery .box-1_of_4 {width:50%; }
 
@@ -246,13 +212,7 @@ background: radial-gradient(circle,#fff 10%, #f7f7f7 84%);
 
 .logo-a .box {padding:0rem; }
 
-.logo-b.wrapper {min-height:30rem;
-background:gainsboro;
-background-image:url(../images/frankfurt_1.jpg);
-background-repeat:no-repeat;
-background-position:20% 40%;
-background-size:cover;
-}
+
 
 /* fotos auf den unterseiten */
 .logo-b.wrapper.primus-pic   {background-image:url(../images/medium_picture204.jpg); }
@@ -361,7 +321,7 @@ color:#26374A;
 text-shadow:none;
 font-weight:normal;
 font-size:1.6rem;
-line-height:2.8rem;
+line-height:2.0rem;
 text-decoration:none;
 }
 
@@ -370,12 +330,19 @@ text-decoration:none;
 #fuss li a:hover {color:#715a35;text-decoration:none; }
 
 
-/* icons social media */
 
-.fussmenu ul.social li  {display:inline-block; margin-right:1rem;margin-bottom:1rem; }
-.fussmenu ul.social li i {display:block;color:#667886;transition:all .6s ease-out; }
-.fussmenu ul.social li a:hover i {color:#c0a780;transform:rotate(720deg) }
+#code-container {
+    background-color: #f5f5f5;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+	font-size:12pt;
+    line-height: 1.4;
+  }
 
+  #code-container code {
+    display: block;
+    white-space: pre;
+  }
 
 
 /* ############################################################ */
